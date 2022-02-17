@@ -1,2 +1,5 @@
-<ap-photo url="http://www.infoescola.com/wp-content/uploads/2010/06/pastor-alem%C3%A3o_319300679.jpg" description="Dog"></ap-photo>
-<ap-photo url="https://static1.patasdacasa.com.br/articles/1/37/41/@/15102-o-corgi-e-um-caozinho-companheiro-amiga-opengraph_1200-2.png" description="Dog"></ap-photo>
+<ap-photo
+    *ngFor="let photo of photos"
+    [url]="photo.url"
+    [description]="photo.description">
+</ap-photo>
