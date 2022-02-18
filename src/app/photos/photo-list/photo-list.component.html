@@ -5,7 +5,7 @@
             type="search"
             placeholder="search..."
             autofocus
-            (keyup)="onKeyUp($event.target)"
+            (keyup)="debounce.next(onKeyUp($event.target))"
         >
     </form>
 </div>
